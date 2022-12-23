@@ -1,0 +1,30 @@
+[package]
+# Semantic Versionning is used: https://semver.org/
+version = "1.1.0"
+
+# The title and description fields are primarily for displaying extension info in UI
+title = "exploded view"
+description="This extension provides an easy and reliable way to create exploded view for selected prims."
+
+# Path (relative to the root) or content of readme markdown file for UI.
+icon = "data/title.png"
+preview_image = "data/1.png" 
+readme  = "docs/README.md"
+changelog = "docs/CHANGELOG.md"
+
+# URL of the extension source repository.
+# repository = "https://github.com" 
+
+# One of categories for UI.
+category = "Other"
+
+# Keywords for the extension
+keywords =  ["kit", "Layout Authoring", "Omni.ui", "Exploded View", "HNADI", "HC"]
+
+# Use omni.ui to build simple UI
+[dependencies]
+"omni.kit.uiapp" = {}
+
+# Main python module this extension provides, it will be publicly available as "import omni.tools.quick_array".
+[[python.module]]
+name = "hnadi.tools.exploded_view" 
